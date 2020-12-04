@@ -1,28 +1,147 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="app.css">
+  <title>Web-Design-Challenge</title>
+</head>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+<body>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <!-- set up for Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Latitude</a>
+    <button class="navbar-toggler borfer border-white" type="button" data-toggle="collapse" data-target="#navbarDropDown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarDropDown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDwopDownManuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="MaxTemp.html">Vs Max Temperature</a>
+            <a class="dropdown-item" href="Humidity.html"> Vs Humidity</a>
+            <a class="dropdown-item" href="Cloudiness.html">Vs Cloudiness</a>
+            <a class="dropdown-item" href="WindSpeed.html">Vs Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Data</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <!-- adding container, set up layout -->
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-6">
+        <!-- add in card with image for home page -->
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <!-- <div class="col-md-8"> -->
+
+            <div class="card-body">
+              <h5 class="card-title">Summary: Latitude vs. X</h5>
+              <hr>
+
+              <div class="row">
+                <!-- left holds image -->
+                <div class="col-6">
+                  <!-- added image from internet -->
+                  <img
+                    src="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\assets\one.png"
+                    class="card-img" alt="Random">
+
+                </div>
+                <!-- right hold text -->
+                <div class="col-6">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis saepe necessitatibus ad
+                    dolor.
+                    Officiis, nobis! Nemo sunt eligendi, velit, tenetur ipsa tempore maiores, quasi eum labore
+                    nobis
+                    nam. Exercitationem, culpa!
+                  </p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+
+              </div>
+            </div>
+            <!-- 
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card mb-3" style="max-width: 800px;">
+          <div class="row no-gutters">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Visulizations</h5>
+                <hr>
+
+                <!-- added image from internet -->
+              </div>
+              <div class='row'>
+                <div class="col col-3 col-lg-6">
+                  <a href="..."><img
+                      src="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\assets\one.png"
+                      alt="Latitude vs. Temperature" height="400" width="400"></a>
+                </div>
+                <div class="col col-3 col-lg-6">
+                  <a href="..."><img
+                      src="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\assets\two.png"
+                      alt="Latitude vs. Humidity" height="400" width="400"></a>
+                </div>
+                <div class="col col-3 col-lg-6">
+                  <a href="..."><img
+                      src="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\assets\three.png"
+                      alt="Latitude vs. Wind Speed" height="400" width="400"></a>
+                </div>
+                <div class="col col-3 col-lg-6">
+                  <a href="..."><img
+                      src="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\assets\four.png"
+                      alt="Latitude vs. Cloudiness" height="400" width="400"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+-->
+  <!--Option 2: jQuery, Popper.js, and Bootstrap JS-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
 
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
-  </body>
+</body>
+
 </html>
