@@ -5,7 +5,28 @@
 }
 
 #title1 {
-    color: rgba(3, 151, 151, 0.712)
+    color: rgba(3, 151, 151, 0.712);
+    font-size: xx-large;
+}
+
+h1 {
+    color: rgba(3, 151, 151, 0.712);
+    font-size: xx-large;
+}
+
+h2 {
+    color: rgba(3, 151, 151, 0.712);
+    font-size: xx-large;
+}
+
+h3 {
+    color: rgba(3, 151, 151, 0.712);
+    font-size: x-large;
+}
+
+h5{
+    font-size: 12px;
+    text-align: left; 
 }
 
 .dropdown-item {
@@ -18,4 +39,19 @@
 
 body {
     background-color: rgb(221, 221, 221);
+}
+
+div a img {
+    width: 225px;
+    height: 250px;
+    border: 5px solid rgba(3, 151, 151, 0.712);
+    padding: 10px;
+    margin: 10px;
+}
+
+div img {
+    width: 200px;
+    border: 5px solid rgba(3, 151, 151, 0.712);
+    padding: 10px;
+    margin: 10px;
 }
