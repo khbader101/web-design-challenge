@@ -1,0 +1,29 @@
+.navbar-light .navbar-brand {
+    color: white;
+    font-weight: bold;
+    background-color:rgba(3, 151, 151, 0.712);
+}
+
+#title1 {
+    color: rgba(3, 151, 151, 0.712)
+}
+
+.dropdown-item {
+    background-color: rgba(3, 151, 151, 0.712)
+}
+
+#hometitle {
+    background-color: white;
+}
+
+.table-responsive {
+    background-color: rgb(207, 207, 207)
+}
+
+h1 {
+    color: rgba(1, 129, 129, 0.712)
+}
+
+h2 {
+    font-size: small;
+}

@@ -1,22 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <title>Web-Visualization by Daewon Kwon</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Lat vs Wind Speed</title>
-  </head>
-  <body>
-    <h1>Lat vs Wind Speed</h1>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!-- content - Padding - Border - Margin -->
+
+<body>
+   <!-- set up for Navbar-->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light" id="hometitle">
+    <a class="navbar-brand"
+        href="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\index.html">Latitude</a>
+    <button class="navbar-toggler borfer border-white" type="button" data-toggle="collapse"
+        data-target="#navbarDropDown" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarDropDown">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDwopDownManuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item"
+                        href="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\vizualization\visualization-1.html">Vs
+                        Max Temperature</a>
+                    <a class="dropdown-item"
+                        href="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\vizualization\visualization-2.html">
+                        Vs Humidity</a>
+                    <a class="dropdown-item"
+                        href="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\vizualization\visualization-3.html">Vs
+                        Cloudiness</a>
+                    <a class="dropdown-item"
+                        href="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\vizualization\visualization-4.html">Vs
+                        Wind Speed</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                    href="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\vizualization\comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                    href="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\data.html">Data</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+  <!-- start of main body -->
+  <div class="container">
+    <br>
+    <div class="row">
+      <!-- left side -->
+      <div class="col col-12 col-md-8 divbdy">
+        <br>
+        <h1>Wind Speed</h1>
+        <hr>
+        <a href="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\vizualization\visualization-4.html"><img src="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\assets\four.png" alt="Latitude vs. Wind Speed"></a>
+
+        <p>
+        As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends ot be warmer this time of year than the nothern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.
+        </p>
+        <hr>
+      </div>
+      <!-- left side end -->
+      <!-- rigth side -->
+      <div class="col col-12 col-md-4 divbdy">
+        <br>
+        <h2>Visualizations</h2>
+        <hr>
+        <div class='row'>
+          <div class="col col-3 col-md-6">
+            <a href="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\vizualization\visualization-1.html"><img src="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\assets\one.png" alt="Latitude vs. Temperature" height="200" width="200"></a>
+          </div>
+          <div class="col col-3 col-md-6">
+            <a href="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\vizualization\visualization-2.html"><img src="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\assets\two.png" alt="Latitude vs. Humidity" height="200" width="200"></a>
+          </div>
+          <div class="col col-3 col-md-6">
+            <a href="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\vizualization\visualization-3.html"><img src="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\assets\three.png" alt="Latitude vs. Cloudiness" height="200" width="200"></a>
+          </div>
+          <div class="col col-3 col-md-6">
+            <a href="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\vizualization\visualization-4.html"><img src="C:\Users\bader\Desktop\BootCamp_HW_Assignments\HW9_webdesign\web-design-challenge\assets\four.png" alt="Latitude vs. Wind Speed" height="200" width="200"></a>
+          </div>
+        </div>
+      </div>
+      <!-- end of rigth side -->
+    </div>
+  </div>
+</body>
+
 </html>
