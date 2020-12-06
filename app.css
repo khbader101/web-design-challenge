@@ -55,3 +55,9 @@ div img {
     padding: 10px;
     margin: 10px;
 }
+
+@media(max-width: 992px){
+    .navbar-expand-lg{
+        background-color: grey;
+    }
+}
